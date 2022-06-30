@@ -69,8 +69,8 @@ getAll.onsuccess = function() {
           }
           // open one more transaction
           const transaction = db.transaction(['new-budget-tracker'], 'readwrite');
-          // access the new_pizza object store
-          const pizzaObjectStore = transaction.objectStore('new-budget-tracker');
+          // access the new-budget-tracker object store
+          const budgetObjectStore = transaction.objectStore('new-budget-tracker');
           // clear all items in your store
           budgetObjectStore.clear();
 
